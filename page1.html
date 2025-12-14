@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Створення Каруселі EQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="middle">
+        <div class="left">
+            <div class="header">
+                <div class="phraseX">Конструктор Каруселі: Створення об'єктів</div>
+            </div>
+            
+            <div class="main">
+                <div class="block3">
+                    <div class="content">
+                        <blockquote>
+                            «EQ — це розум, що відчуває»
+                        </blockquote>
+                        <img src="images/first_image.jpg" alt="Емоції">
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="block4">Введіть параметри слайдів для каруселі</div>
+                    <div class="block5">
+                        <div id="carousel-creator">
+                            <label for="num-slides">Кількість слайдів:</label>
+                            <input type="number" id="num-slides" min="1" max="10" value="3" onchange="generateSlideInputs()">
+                        
+                            <div id="slides-container">
+                                </div>
+                        
+                            <button onclick="generateSlideInputs()">Оновити форму</button>
+                            <button onclick="saveCarouselData()">Зберегти Карусель на Сервері</button>
+
+                            <p id="save-status" style="margin-top: 15px; font-weight: bold;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <ul class="menu">
+                <li><a href="page1.html">Створення</a></li>
+                <li><a href="page2.html">Перегляд Каруселі</a></li>
+                <li><a href="page3.html">Дослідники</a></li>
+                <li><a href="page4.html">Роль у житті</a></li>
+                <li><a href="page5.html">Практики розвитку</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="phraseY">Розум, що думає, і розум, що відчуває.</div>
+    </div>
+    <script src="page1_script.js"></script>
+</body>
+</html>
